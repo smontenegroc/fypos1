@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+aside{
+    width: 15%;
+    height: 655px;
+    background-color: rgb(32,33,40);
+    text-align: center;
+    position: fixed;
+    left: 0;
+}
+aside p{
+    color: white;
+    margin-top: 22px;
+}
+
+.contenedor{
+    display: flex;
+    width: 85%;
+    margin-left: 15%;
+}
+nav{
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    margin-top: 150px;
+}
+nav ul li{
+    text-align: center;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding:  10px 0;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: rgb(32,33,40);
+}
+.content{
+    width: 100%;
+    
+}
+.panel-top{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.panel-top p{
+    margin-left: 87%;
+}
+.panel-top::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32, 33, 40);
+    filter: blur(8px);
+    z-index: -1;
+}
+.panel-top ul{
+    margin-left: 85%;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.panel-top ul li{
+    list-style: none;
+}
+main{
+    width: 100%;
+}
+h1{
+    margin: 15px;
+}
+
+.tbProductos{
+    margin-left: 15px;
+    width: 70%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.tbProductos tr th,
+.tbProductos tr td{
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+.tbProductos tr:nth-child(even){
+    background-color: #b7f3f3;
+    
+}
+.tbProductos tr:first-child{
+    background-color: rgb(32,33,40);
+    color:white;
+}
+.buttons{
+    margin: 30px 15px;
+}
+.active{
+    background-color: green;
+}
+
+
+
+
+
